@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: #111729;
+  background-image: url(./assets/bg-image.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+header {
+  height: 5rem;
+  width: 100%;
+  padding: 2rem 5vw;
+}
+
+.container {
+  padding: 2rem;
+  min-height: calc(100vh - 5rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem 5rem;
+}
+
+.info-container {
+  text-align: center;
+  margin-bottom: 5rem;
+  max-width: 30rem;
+}
+.info-title {
+  margin: 1rem 0;
+  font-size: 3.2rem;
+  color: #ffffff;
+}
+.info-text {
+  font-size: 1.6rem;
+  color: #ffffff;
+}
+
+form {
+  background-color: #cdd5e054;
+  border-radius: 2rem;
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 2rem;
+}
+.form-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+  grid-gap: 1rem;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.form-label {
+  color: #ffffff;
+  font-size: 1.4rem;
+}
+.form-label input,
+.form-label select,
+.form-label textarea {
+  margin-top: 0.4rem;
+  width: 100%;
+  height: 4.5rem;
+  padding: 1rem 2rem;
+  border-radius: 1.4rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: 600;
+  color: #111729;
+  background-color: #f8fafc;
+}
+.form-label input::placeholder {
+  color: #cdd5e0;
+  font-weight: 700;
+}
+.form-label select::placeholder,
+.form-label textarea::placeholder {
+  font-weight: 700;
+  color: #111729;
+}
+.form-label #message {
+  padding: 2rem;
+  height: 15rem;
+  width: 100%;
+  resize: none;
+}
+form button {
+  width: 100%;
+  height: 4.5rem;
+  padding: 1rem;
+  border-radius: 1.4rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #f8fafc;
+  margin-top: 2rem;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #4036a9;
+}

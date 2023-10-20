@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="./assets/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Gonzalo Yacante" />
+    <meta name="copyright" content="Gonzalo Yacante" />
+    <meta name="description" content="Gonzalo Yacante - Contact Page" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet" />
+    <title>Contact Page</title>
+  </head>
+  <body>
+    <header>
+      <img src="./assets/contact-form-icon.svg" alt="Logo icon" />
+    </header>
+    <main class="container">
+      <section class="info-container">
+        <h1 class="info-title">Interested in our business pricing?</h1>
+        <p class="info-text">
+          Fill out the form to view details and we’ll contact you as soon as
+          possible.
+        </p>
+      </section>
+      <form>
+        <div class="form-container">
+          <label for="name" class="form-label">
+            Name
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Ethan Johnson" />
+          </label>
+          <label for="email" class="form-label">
+            Company Email
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="ethan@johnson.com" />
+          </label>
+          <label for="size" class="form-label">
+            Company Size
+            <select id="size" name="size">
+              <option value="50-100">50-100 employees</option>
+              <option value="100-200">100-200 employees</option>
+              <option value="200-300">200-300 employees</option>
+              <option value="+400">+400 employees</option>
+            </select>
+          </label>
+          <label for="subject" class="form-label">
+            Subject
+            <select id="subject" name="subject">
+              <option value="Building Landing pages">
+                Building Landing pages
+              </option>
+              <option value="Building E-Commerce">Building E-Commerce</option>
+              <option value="Other Idea">Other Idea</option>
+            </select>
+          </label>
+        </div>
+        <label for="message" class="form-label">
+          Message
+          <textarea id="message" name="message" rows="4" cols="50" placeholder="50-100 employees" /></textarea>
+        </label>
+        <button type="submit">Contact Sales</button>
+      </form>
+    </main>
+  </body>
+</html>
